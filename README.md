@@ -114,7 +114,7 @@ vht_oper_chwidth=1
 vht_oper_centr_freq_seg0_idx=155
 
 auth_algs=1
-wpa=3
+wpa=2
 wpa_passphrase=SomePassword
 wpa_key_mgmt=WPA-PSK
 rsn_pairwise=CCMP
