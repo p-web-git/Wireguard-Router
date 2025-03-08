@@ -255,4 +255,9 @@ sudo ./forward-rules.sh
 
 ### Connect to the internet
 
-I connect to AP on wlan0 and ssh to the router and run `sudo armbian-config` that provides an interface to connect to internet. 
+I connect to AP on wlan0 and ssh to the router and run the following to connect to the internet:
+```bash
+nmcli device wifi list ifname wlan1
+nmcli device wifi connect SSID password PASSWORD ifname wlan1
+```
+
