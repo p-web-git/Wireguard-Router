@@ -1,7 +1,7 @@
 # Wireguard And Tailscale Router 
 The goal of this page is to document how to configure a router on a linux device so that I can have my own AP (access point) when travelling and be able connect home. 
-I tried to run raspap on a docker container and while it is a great solution, I didn't see a good way to integrate with tailscale or a reliable way to always have the AP working
 
+I tried to run raspap on a docker container and while it is a great solution, I didn't see a good way to integrate with tailscale or a reliable way to always have the AP working.
 ## Hardware
 
 The following configuration will run on Radxa Rock 5c which has 2 wireless interfaces and 1 ethernet port.
@@ -245,3 +245,7 @@ sudo chmow +x forward-rules.sh
 sudo ./forward-rules.sh
 ```
 </details>
+
+### Connect to the internet
+
+I connect to AP on wlan0 and ssh to the router and run `sudo armbian-config` that provides an interface to connect to internet. 
