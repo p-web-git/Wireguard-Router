@@ -120,6 +120,13 @@ wpa_key_mgmt=WPA-PSK
 rsn_pairwise=CCMP
 ```
 
+So that hostapd starts even when there is no internet on wlan1
+
+/etc/rc.local
+```bash
+systemctl start hostapd.service
+```
+
 </details>
 
 ## Tunnel
